@@ -15,15 +15,6 @@ repositories {
 dependencies {
     // https://mvnrepository.com/artifact/com.beust/klaxon
     implementation("com.beust:klaxon:5.5")
-    testImplementation(kotlin("test-junit"))
-}
-
-tasks.test {
-    useJUnit()
-}
-
-tasks.withType<KotlinCompile>() {
-    kotlinOptions.jvmTarget = "1.8"
 }
 
 application {

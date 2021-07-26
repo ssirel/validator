@@ -4,7 +4,7 @@ import java.io.File
 fun main(args: Array<String>) {
     println("Hello! Email validation is started!")
     //json file location
-    val file = File("resources/personData")
+    val file = File("src/main/resources/personData")
     val persons = Klaxon().parse<Persons>(file)
     if (persons != null) {
         val validateEmails = emailValidator().validateEmails(persons.personData)
